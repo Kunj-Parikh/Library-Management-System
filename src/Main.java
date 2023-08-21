@@ -48,10 +48,15 @@ public class Main {
 		User user = new User(name, libraryCardNum);
 		// Initiate a user object; otherwise, you will call all methods from the main, not from the user. If you add more users, how do you manage?
 		System.out.println("\nHello " + user.getName() + "! If you would like to check out a book, then "
-							+ "please type \"Book [Call number]\".\nForgot your card number? "
-							+ "Then type \"card number\" below. For information on the library, "
-							+ "\ntype \"library\". If you would like to leave the library, type \"exit\".");
+					+ "please type \"Borrow [Call number]\".\nForgot your card number? "
+					+ "Then type \"card number\" below. To see the library catalog, type \"catalog\"."
+					+ "\nFor information on the library, type \"library\". "
+					+ "To see the list of available books, type \"available books\""
+					+ "\nTo return a book, type \"Return [Call number]\". "
+					+ "To see a list of the books you borrowed, type \"books borrowed\""
+					+ "\nIf you would like to leave the library, type \"exit\".");
 		String input = "";
+		
 		int i = 0;
 		while(!input.equalsIgnoreCase("exit")) {
 			i++;
